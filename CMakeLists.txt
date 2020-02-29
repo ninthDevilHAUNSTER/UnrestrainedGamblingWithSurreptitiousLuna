@@ -1,0 +1,73 @@
+cmake_minimum_required(VERSION 3.5)
+project(UnrestrainedGamblingWithSurreptitiousLuna)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(UnrestrainedGamblingWithSurreptitiousLuna
+        main.cpp
+        AlgNote/AlgNoteMainHeader.h
+        PAT/PATMainHeader.h
+        #        PAT/emergency.cpp
+        #        AlgNote/shortest_path_adj.cpp
+        #        AlgNote/STL_usage.cpp
+        #        AlgNote/shortest_path_matrix.cpp
+        #        "PAT/Travel Plan DJ.cpp"
+        #        "PAT/Travel Plan DFS_DF.cpp"
+        #        "PAT/Public Bike Management.cpp"
+        #        "PAT/gas station.cpp"
+        #        "PAT/All Road Lead to Rome D DFSj.cpp"
+        #        "PAT/Shuffling Machine.cpp"
+        #        "PAT/A1026 Shortest Distance.cpp"
+        #        "PAT/A1065 A+B and C (64bit).cpp"
+        #        "PAT/A1002 A+B for Polynomials.cpp"
+        #        "PAT/A1009 Product of Polynomials.cpp"
+        #        "PAT/A1011 World Cup Betting.cpp"
+        #        "PAT/A1006 Sign In and Sign Out.cpp"
+        #        "PAT/A1036 Boys vs Girls .cpp"
+        #        "PAT/A1031 Hello World for U.cpp"
+        #        "PAT/A1019 General Palindromic Number.cpp"
+        #        "PAT/A1027 Colors in Mars.cpp"
+        #        "PAT/A1058 A+B in Hogwarts.cpp"
+        #        "PAT/A1061 Dating.cpp"
+        #        "PAT/A1073 Scientific Notation.cpp"
+        #        "PAT/A1005 Spell It Right.cpp"
+        #        "PAT/A1035 Password.cpp"
+        #        "PAT/A1077 Kuchiguse.cpp"
+        #        "PAT/A1082 Read Number in Chinese.cpp" #这道题我写的心态崩了...
+        #        "PAT/A1062 Talent and Virtue.cpp"
+        #        "PAT/A1012 The Best Rank.cpp" # 该题不是最优的解法，应该把rank放到新开的10**6大小的数组里面，可以减少查询的时间复杂度
+        #        "PAT/A1016 Phone Bills.cpp"
+        # ↑↑↑↑↑↑↑↑↑↑有个样例死活过不去啊。哭了，我做了一个多快两个消失了。
+        #        "PAT/A1025 PAT Ranking.cpp"
+        #        "PAT/A1028 List Sorting.cpp"
+        #        "PAT/A1055 The World's Richest.cpp"
+        #        "PAT/A1075 PAT Judge.cpp"
+        #        "PAT/A1083 List Grades.cpp"
+        #        "PAT/A1080 Graduate Admission.cpp"
+        # ↑↑↑↑↑↑↑↑↑↑两个样例过不去...
+        #        "PAT/A1095 Cars on Campus.cpp"
+        #        "PAT/A1084 Broken Keyboard.cpp"
+        #        "PAT/A1092 To Buy or Not to Buy.cpp"
+        #        "PAT/A1041 Be Unique.cpp"
+        #        "PAT/A1050 String Subtraction.cpp"
+        #        "PAT/A1048 Find Coins.cpp"
+        #        "PAT/A1070 Mooncake.cpp"
+        #        "PAT/A1033 To Fill or Not to Fill.cpp"
+        #        "PAT/A1067 Sort with Swap(0, i).cpp"
+        #        "PAT/A1038 Recover the Smallest Number.cpp"
+        #        "PAT/A1085 Perfect Sequence.cpp"
+        #        "PAT/A1010 Radix.cpp"
+        #        "PAT/A1044 Shopping in Mars.cpp"
+        #        "PAT/A1089 Insert or Merge.cpp"
+        #        "PAT/A1029 Median.cpp"
+        #        "PAT/A1093 Count PAT's.cpp"
+        #        "PAT/A1101 Quick Sort.cpp"
+        #        "PAT/A1069 The Black Hole of Numbers.cpp"
+        #        "PAT/A1104 Sum of Number Segments.cpp"
+        #        AlgNote/MathProblemLearning.cpp
+        #        "PAT/A1059 Prime Factors.cpp"
+        #        "PAT/A1081 Rational Sum.cpp"
+        #        "PAT/A1088 Rational Arithmetic.cpp"
+        #        "PAT/A1015 Reversible Primes.cpp"
+        #        "PAT/A1078 Hashing.cpp"
+        "PAT/A1096 Consecutive Factors.cpp")
