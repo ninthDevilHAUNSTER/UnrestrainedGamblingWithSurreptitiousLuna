@@ -74,4 +74,10 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1023 Have Fun with Numbers.cpp"
         AlgNote/BigNumberLearning.cpp
         #        "PAT/A1024 Palindromic Number.cpp"
-        "PAT/A1039 Course List for Student.cpp" "PAT/A1047 Student List for Course.cpp")
+        #        "PAT/A1039 Course List for Student.cpp"
+        #        "PAT/A1047 Student List for Course.cpp"
+        #        "PAT/A1063 Set Similarity.cpp"
+        #        "PAT/A1100 Mars Numbers.cpp"
+        #        "PAT/A1054 The Dominant Color.cpp"
+        #        "PAT/1071 Speech Patterns.cpp"
+        "PAT/A1022 Digital Library.cpp")
