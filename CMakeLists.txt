@@ -70,4 +70,8 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1088 Rational Arithmetic.cpp"
         #        "PAT/A1015 Reversible Primes.cpp"
         #        "PAT/A1078 Hashing.cpp"
-        "PAT/A1096 Consecutive Factors.cpp")
+        #        "PAT/A1096 Consecutive Factors.cpp"
+        #        "PAT/A1023 Have Fun with Numbers.cpp"
+        AlgNote/BigNumberLearning.cpp
+        #        "PAT/A1024 Palindromic Number.cpp"
+        "PAT/A1039 Course List for Student.cpp" "PAT/A1047 Student List for Course.cpp")
