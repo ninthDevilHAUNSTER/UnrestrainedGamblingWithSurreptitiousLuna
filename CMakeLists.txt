@@ -80,4 +80,12 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1100 Mars Numbers.cpp"
         #        "PAT/A1054 The Dominant Color.cpp"
         #        "PAT/1071 Speech Patterns.cpp"
-        "PAT/A1022 Digital Library.cpp")
+        #        "PAT/A1022 Digital Library.cpp"
+        #        "PAT/A1051 Pop Sequence.cpp"
+        #        "PAT/A1056 Mice and Rice.cpp"
+
+        #        "PAT/A1074 Reversing Linked List.cpp"
+        #        "PAT/A1074 Reversing Linked List with Dynamic Nodelist.cpp"
+        #        "PAT/A1032 Sharing.cpp"
+        #        "PAT/A1052 Linked List Sorting.cpp"
+        "PAT/A1097 Deduplication on a Linked List.cpp")
