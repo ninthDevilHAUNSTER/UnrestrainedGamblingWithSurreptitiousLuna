@@ -7,6 +7,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         main.cpp
         AlgNote/AlgNoteMainHeader.h
         PAT/PATMainHeader.h
+        #        AlgNote/NullptrLearning.cpp
         #        PAT/emergency.cpp
         #        AlgNote/shortest_path_adj.cpp
         #        AlgNote/STL_usage.cpp
@@ -72,7 +73,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1078 Hashing.cpp"
         #        "PAT/A1096 Consecutive Factors.cpp"
         #        "PAT/A1023 Have Fun with Numbers.cpp"
-        AlgNote/BigNumberLearning.cpp
+        #        AlgNote/BigNumberLearning.cpp
         #        "PAT/A1024 Palindromic Number.cpp"
         #        "PAT/A1039 Course List for Student.cpp"
         #        "PAT/A1047 Student List for Course.cpp"
@@ -100,4 +101,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        ↑ 这个样例最后一个死活过不去。。。。我试了多种方法依然不知道。。。咋办啊。
         #        "PAT/A1043 Is It a Binary Search Tree.cpp"
         #        "PAT/A1064 Complete Binary Search Tree.cpp"
-        "PAT/A1099 Build A Binary Search Tree.cpp")
+        #        "PAT/A1099 Build A Binary Search Tree.cpp"
+        #        AlgNote/AVLTreeLearning.cpp
+        "PAT/A1066 Root of AVL Tree.cpp"
+        AlgNote/SortMethodLearning.cpp)
