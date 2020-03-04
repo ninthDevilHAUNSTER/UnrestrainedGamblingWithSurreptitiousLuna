@@ -92,4 +92,12 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1086 Tree Traversals Again.cpp"
         #        "PAT/A1102 Invert a Binary Tree.cpp"
         #        "PAT/A1079 Total Sales of Supply Chain.cpp"
-        "PAT/A1090 Highest Price in Supply Chain.cpp")
+        #        "PAT/A1090 Highest Price in Supply Chain.cpp"
+        #        "PAT/A1094 The Largest Generation.cpp"
+        #        "PAT/A1106 Lowest Price in Supply Chain.cpp"
+        #        "PAT/A1004 Counting Leaves.cpp"
+        #        "PAT/A1053 Path of Equal Weight.cpp"
+        #        ↑ 这个样例最后一个死活过不去。。。。我试了多种方法依然不知道。。。咋办啊。
+        #        "PAT/A1043 Is It a Binary Search Tree.cpp"
+        #        "PAT/A1064 Complete Binary Search Tree.cpp"
+        "PAT/A1099 Build A Binary Search Tree.cpp")
