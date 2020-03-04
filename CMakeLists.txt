@@ -83,9 +83,13 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1022 Digital Library.cpp"
         #        "PAT/A1051 Pop Sequence.cpp"
         #        "PAT/A1056 Mice and Rice.cpp"
-
         #        "PAT/A1074 Reversing Linked List.cpp"
         #        "PAT/A1074 Reversing Linked List with Dynamic Nodelist.cpp"
         #        "PAT/A1032 Sharing.cpp"
         #        "PAT/A1052 Linked List Sorting.cpp"
-        "PAT/A1097 Deduplication on a Linked List.cpp")
+        #        "PAT/A1097 Deduplication on a Linked List.cpp"
+        #        "PAT/A1020 Tree Traversals.cpp"
+        #        "PAT/A1086 Tree Traversals Again.cpp"
+        #        "PAT/A1102 Invert a Binary Tree.cpp"
+        #        "PAT/A1079 Total Sales of Supply Chain.cpp"
+        "PAT/A1090 Highest Price in Supply Chain.cpp")
