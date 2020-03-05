@@ -37,7 +37,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1082 Read Number in Chinese.cpp" #这道题我写的心态崩了...
         #        "PAT/A1062 Talent and Virtue.cpp"
         #        "PAT/A1012 The Best Rank.cpp" # 该题不是最优的解法，应该把rank放到新开的10**6大小的数组里面，可以减少查询的时间复杂度
-        #        "PAT/A1016 Phone Bills.cpp"
+        #                "PAT/A1016 Phone Bills.cpp"
         # ↑↑↑↑↑↑↑↑↑↑有个样例死活过不去啊。哭了，我做了一个多快两个消失了。
         #        "PAT/A1025 PAT Ranking.cpp"
         #        "PAT/A1028 List Sorting.cpp"
@@ -108,4 +108,8 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1013 Battle Over Cities.cpp"
         #        "PAT/A1021 Deepest Root.cpp"
         #        "PAT/A1008 Elevator.cpp"
-        "PAT/A1034 Head of a Gang.cpp")
+        #        "PAT/A1034 Head of a Gang.cpp"
+        #        "PAT/A1076 Forwards on Weibo.cpp"
+        #        "PAT/A1037 Magic Coupon.cpp"
+        #        "PAT/A1049 Counting Ones.cpp"
+        "PAT/A1091 Acute Stroke.cpp")
