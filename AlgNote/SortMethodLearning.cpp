@@ -30,7 +30,33 @@ void printfVec(const vector<int> &vec) {
     }
 }
 
-void headSort(vector<int> query) {
+void heapSortAdjust(vector<int> &heap, int low, int high) {
+    if (low > high) return;
+    int child = 2 * low + 1;
+    if (child + 1 < high && heap[child + 1] > heap[child]) child++;
+    if (child != low) {
+        swap(heap[child], heap[low]);
+        heapSortAdjust(heap, low, high);
+    }
+}
+
+int heapStep = 0;
+
+void heapSort(vector<int> query) {
+    /*
+     *
+     */
+    heapStep = 0;
+    for (int i = int(query.size()) / 2 -1 ; i >= 0; --i) {
+        heapSortAdjust(query, i, query.size());
+    }
+    for (int j = int(query.size()) - 1; j >= 1; --j) {
+        swap(query[j], query[0]);
+        heapSortAdjust(query, 0, j);
+        heapStep++;
+        printf("MergeSort %d Step \n", heapStep);
+        printfVec(query);
+    }
 
 }
 
@@ -115,7 +141,7 @@ void fastSort(vector<int> query) {
 int alg_solver() {
     vector<int> s = {3, 1, 2, 8, 7, 5, 9, 4, 6, 0};
 //    insertSort(s);
-    fastSort(s);
+    heapSort(s);
     return 0;
 }
 

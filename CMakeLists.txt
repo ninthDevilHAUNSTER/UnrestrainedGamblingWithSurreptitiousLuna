@@ -7,7 +7,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         main.cpp
         AlgNote/AlgNoteMainHeader.h
         PAT/PATMainHeader.h
-        #        AlgNote/NullptrLearning.cpp
+        AlgNote/NullptrLearning.cpp
         #        PAT/emergency.cpp
         #        AlgNote/shortest_path_adj.cpp
         #        AlgNote/STL_usage.cpp
@@ -103,5 +103,9 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1064 Complete Binary Search Tree.cpp"
         #        "PAT/A1099 Build A Binary Search Tree.cpp"
         #        AlgNote/AVLTreeLearning.cpp
-        "PAT/A1066 Root of AVL Tree.cpp"
-        AlgNote/SortMethodLearning.cpp)
+        #        "PAT/A1066 Root of AVL Tree.cpp"
+        #        AlgNote/SortMethodLearning.cpp
+        #        "PAT/A1013 Battle Over Cities.cpp"
+        #        "PAT/A1021 Deepest Root.cpp"
+        #        "PAT/A1008 Elevator.cpp"
+        "PAT/A1034 Head of a Gang.cpp")
