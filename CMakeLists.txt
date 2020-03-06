@@ -118,4 +118,6 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1103 Integer Factorization.cpp"
         AlgNote/DynamicProgrammingLearning.cpp
         #        "PAT/A1007 Maximum Subsequence Sum .cpp"
-        "PAT/A1045 Favorite Color Stripe.cpp")
+        #        "PAT/A1045 Favorite Color Stripe LIS.cpp"
+        #        "PAT/A1045 Favorite Color Stripe LCS.cpp"
+        "PAT/A1040 Longest Symmetric String.cpp")

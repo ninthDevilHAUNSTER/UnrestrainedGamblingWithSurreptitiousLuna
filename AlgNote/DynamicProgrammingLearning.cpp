@@ -159,6 +159,16 @@ public:
     }
 
     void LongestCommonSubsequenceProblem() {
+        /*
+         * 最长公共子序列。
+         * dp[i][j]含义：
+         *      A[i] 与 B[i] 之前的LCS长度。
+         * dp状态方程
+         *  dp[i][j] =
+         *      if A[i] == B[i] : dp[i-1][j-1]+1
+         *      if A[i] != B[i] : max(dp[i][j-1],dp[i-1][j])
+         *
+         */
         init();
         string _s1, _s2;
         string s1, s2;
@@ -181,17 +191,6 @@ public:
             }
         }
         printf("%d", dp2d[s1.length() - 1][s2.length() - 1]);
-
-        /*
-         * 最长公共子序列。
-         * dp[i][j]含义：
-         *      A[i] 与 B[i] 之前的LCS长度。
-         * dp状态方程
-         *  dp[i][j] =
-         *      if A[i] == B[i] : dp[i-1][j-1]
-         *      if A[i] != B[i] : max(dp[i][j-1],dp[i-1][j])
-         *
-         */
     }
 
     void LongestPalindromeSubstringProblem() {
@@ -204,10 +203,12 @@ public:
         this->init(); // 这里初始为全0了。
         for (int i = 0; i < s.length(); ++i) {
             this->dp2d[i][i] = 1;
-            if (i + 1 < s.length())
-                this->dp2d[i][i + 1] = (s[i] == s[i + 1]) ? 2 : 1;
+            if (i + 1 < s.length()) {
+                this->dp2d[i][i + 1] = (s[i] == s[i + 1]) ? 1 : 0;
+                ans = (s[i] == s[i + 1]) ? 2 : 1;
+            }
         }
-        for (int subLen = 3; subLen < s.length(); ++subLen) {
+        for (int subLen = 3; subLen <= s.length(); ++subLen) { // 这里是等号
             for (int i = 0; i + subLen - 1 < s.length(); ++i) {
                 int j = i + subLen - 1;
                 if (s[i] == s[j]) {
@@ -236,12 +237,70 @@ public:
 
     }
 
+
+    int OneZeroBagProblem() {
+        /*
+         * 01背包问题
+         * 第i件物品重量 w[i] 价格c[i]
+         *
+         * 非优化的情况（二维数组）
+         *
+         * dp[i][j] 表示前i件物品恰好装入容量为v的背包，所能够获得的最大价值。
+         * 1 <= i <= n
+         * 0 <= j <= V
+         *
+         * 对于每件物品，有取或者不取两种情况，
+         * 取：相当于求前i-1件物品恰好装入容量为v-w[i]的背包中所能取得的最大价值
+         * dp[i][j] = dp[i-1][V - w[i]] + c[i]
+         * 不取：相当于求解前i-1间物品恰好装入容量为v的背包中所能取得的最大价值
+         * dp[i][j] = dp[i-1][V]
+         *
+         */
+        int n, V;
+        cin >> n >> V;
+        this->init(); // 初始化的时候全为0。
+        for (int i = 1; i <= n; ++i) {
+            cin >> this->seq[i]; // seq 表示重量
+        }
+        for (int j = 1; j <= n; ++j) {
+            cin >> this->seq2[j]; // seq2 表示价格
+        }
+
+        for (int i = 1; i <= n; ++i) {
+            for (int v = V; v >= seq[i]; --v) {
+                this->dp[v] = max(this->dp[v], this->dp[v - seq[i]] + seq2[i]);
+            }
+        }
+        int max = 0;
+        for (int v = 0; v <= V; ++v) {
+            if (dp[v] > max) {
+                max = dp[v];
+            }
+        }
+        cout << max;
+        /*
+        for (int i = 1; i <= n; ++i) {
+            for (int v = seq[i]; v <= V; ++v) {
+                this->dp2d[i][v] = max(this->dp2d[i - 1][v],
+                                       this->dp2d[i - 1][v - this->seq[i]] + this->seq2[i]);
+            }
+        }
+         */
+        /*
+         * 之后，来考虑优化的情况
+         * 由于 dp[i][v] 依赖于 dp[i-1][v ... w[i]] 的数据，也就是说，第一个维度可以完全省略
+         * 于是就有了 dp[v] = max(dp[v],dp[v-w[i]] + c[i])
+         * 但是，一定要逆序遍历v，为啥呢？看如下图。
+         */
+
+    }
+
 };
 
 
 int alg_solver() {
     Solver s;
-    s.DAGProblem();
+    s.OneZeroBagProblem();
     return 0;
 }
 
@@ -266,4 +325,9 @@ adminsorry
 
 
  PATZJUJZTACCBCC
+
+5 8
+3 5 1 2 2
+4 5 2 1 3
+
 */
