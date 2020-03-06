@@ -115,5 +115,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1091 Acute Stroke.cpp"
         #        "PAT/A1017 Queueing at Bank.cpp"
         #        AlgNote/CtimeLearning.cpp
-        "PAT/A1103 Integer Factorization.cpp"
-        AlgNote/DynamicProgrammingLearning.cpp)
+        #        "PAT/A1103 Integer Factorization.cpp"
+        AlgNote/DynamicProgrammingLearning.cpp
+        #        "PAT/A1007 Maximum Subsequence Sum .cpp"
+        "PAT/A1045 Favorite Color Stripe.cpp")
