@@ -7,7 +7,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         main.cpp
         AlgNote/AlgNoteMainHeader.h
         PAT/PATMainHeader.h
-                AlgNote/NullptrLearning.cpp
+        #        AlgNote/NullptrLearning.cpp
         #        PAT/emergency.cpp
         #        AlgNote/shortest_path_adj.cpp
         #        AlgNote/STL_usage.cpp
@@ -113,6 +113,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1037 Magic Coupon.cpp"
         #        "PAT/A1049 Counting Ones.cpp"
         #        "PAT/A1091 Acute Stroke.cpp"
-        "PAT/A1017 Queueing at Bank.cpp"
+        #        "PAT/A1017 Queueing at Bank.cpp"
         #        AlgNote/CtimeLearning.cpp
-        )
+        "PAT/A1103 Integer Factorization.cpp"
+        AlgNote/DynamicProgrammingLearning.cpp)
