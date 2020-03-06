@@ -25,7 +25,7 @@ class Solver {
     int seq2[MaxSize] = {0};
     int seq2d[MaxSize][MaxSize]{};
     int dp[MaxSize]{};
-    int pre[MaxSize];
+    int pre[MaxSize]{};
     int dp2d[MaxSize][MaxSize]{};
 public:
     Solver() {
