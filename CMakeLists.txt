@@ -120,4 +120,5 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1007 Maximum Subsequence Sum .cpp"
         #        "PAT/A1045 Favorite Color Stripe LIS.cpp"
         #        "PAT/A1045 Favorite Color Stripe LCS.cpp"
-        "PAT/A1040 Longest Symmetric String.cpp")
+        #        "PAT/A1040 Longest Symmetric String.cpp"
+        "PAT/A1068 Find More Coins .cpp" "PAT/A1068 Find More Coins.cpp")

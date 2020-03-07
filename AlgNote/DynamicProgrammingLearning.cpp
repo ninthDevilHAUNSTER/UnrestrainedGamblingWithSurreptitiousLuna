@@ -271,6 +271,14 @@ public:
                 this->dp[v] = max(this->dp[v], this->dp[v - seq[i]] + seq2[i]);
             }
         }
+/*
+ * 完全背包
+        for (int i = 1; i <= n; ++i) {
+            for (int v= seq[i]; v <= V;++v) {
+                this->dp[v] = max(this->dp[v], this->dp[v - seq[i]] + seq2[i]);
+            }
+        }
+*/
         int max = 0;
         for (int v = 0; v <= V; ++v) {
             if (dp[v] > max) {
@@ -299,8 +307,8 @@ public:
 
 
 int alg_solver() {
-    Solver s;
-    s.OneZeroBagProblem();
+//    Solver s;
+//    s.OneZeroBagProblem();
     return 0;
 }
 
