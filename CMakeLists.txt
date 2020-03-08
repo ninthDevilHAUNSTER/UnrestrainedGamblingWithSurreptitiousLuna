@@ -116,9 +116,17 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1017 Queueing at Bank.cpp"
         #        AlgNote/CtimeLearning.cpp
         #        "PAT/A1103 Integer Factorization.cpp"
-        AlgNote/DynamicProgrammingLearning.cpp
+        #        AlgNote/DynamicProgrammingLearning.cpp
         #        "PAT/A1007 Maximum Subsequence Sum .cpp"
         #        "PAT/A1045 Favorite Color Stripe LIS.cpp"
         #        "PAT/A1045 Favorite Color Stripe LCS.cpp"
         #        "PAT/A1040 Longest Symmetric String.cpp"
-        "PAT/A1068 Find More Coins .cpp" "PAT/A1068 Find More Coins.cpp")
+        #        "PAT/A1068 Find More Coins .cpp"
+        #        "PAT/A1068 Find More Coins.cpp"
+        #        "PAT/A1057 Stack.cpp"
+        #        "PAT/A1107 Social Clusters.cpp"
+        AlgNote/UnionFindSetLearning.cpp
+        #        "PAT/A1108 Finding Average .cpp"
+        #        "PAT/A1109 Group Photo.cpp"
+        #        "PAT/A1110 Complete Binary Tree.cpp"
+        "PAT/A1111 Online Map.cpp" "PAT/A1112 Stucked Keyboard.cpp")
