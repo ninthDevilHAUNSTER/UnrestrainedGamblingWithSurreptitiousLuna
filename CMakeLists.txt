@@ -143,4 +143,10 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1121 Damn Single.cpp"
         #        "PAT/A1122 Hamiltonian Cycle.cpp"
         #        "PAT/A1123 Is It a Complete AVL Tree.cpp"
-        "PAT/A1124 Raffle for Weibo Followers.cpp")
+        #        "PAT/A1124 Raffle for Weibo Followers.cpp"
+        #        "PAT/A1125 Chain the Ropes .cpp"
+        #        "PAT/A1126 Eulerian Path.cpp"
+        #        "PAT/A1127 ZigZagging on a Tree.cpp"
+        #        "PAT/A1128 N Queens Puzzle.cpp"
+        #        "PAT/A1129 Recommendation System.cpp"
+        "PAT/A1130 Infix Expression.cpp")
