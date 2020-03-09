@@ -2,6 +2,8 @@
 // Created by shaob on 2020/2/24.
 //
 
+/*
+
 #include <iostream>
 #include <algorithm>
 #include <string>
@@ -82,7 +84,9 @@ int main() {
         printf("G%d\n%.1f %.1f", ansid - n, ansdis, ansaver);
     return 0;
 }
-/*
+
+ */
+
 //#include "PATMainHeader.h"
 #include <iostream>
 #include <cstdio>
@@ -196,4 +200,4 @@ int pat_solver() {
         printf("%.1f %.1f", double(BestMinDis), BestAvgDis);
     }
     return 0;
-}*/
+}

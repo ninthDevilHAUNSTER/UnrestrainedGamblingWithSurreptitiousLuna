@@ -63,7 +63,7 @@ vector<int> preTimeVector[MaxSize];
 void dj_length(int s) {
     fill(vis, vis + MaxSize, false);
     d[s] = 0;
-    for (int i = 0; i < N; ++i) {
+    for (int i = 0; i <= N; ++i) {
         int MIN = INF, v = -1;
         for (int j = 0; j < N; ++j) {
             if (!vis[j] && d[j] < MIN) {
@@ -90,7 +90,7 @@ void dj_length(int s) {
 void dj_time(int s) {
     fill(vis, vis + MaxSize, false);
     t[s] = 0;
-    for (int i = 0; i < N; ++i) {
+    for (int i = 0; i <= N; ++i) {
         int MIN = INF, v = -1;
         for (int j = 0; j < N; ++j) {
             if (!vis[j] && t[j] < MIN) {
@@ -100,7 +100,7 @@ void dj_time(int s) {
         }
         if (v == -1)break;
         vis[v] = true;
-        for (int k = 0; k < N; ++k) {
+        for (int k = 0; k <= N; ++k) {
             if (!vis[k] && net[v][k].time != INF) {
                 if (net[v][k].time + t[v] < t[k]) {
                     t[k] = net[v][k].time + t[v];
@@ -116,17 +116,11 @@ void dj_time(int s) {
 
 vector<int> tmpPath, bestTimePath, bestDistancePath;
 int optBestTimePathShortestDistanceCost = INF;
-int optBestDistancePathShortestTimeCost = INF;
 
 void DFS_t(int v) {
     if (v == start) {
         tmpPath.push_back(v);
-        int tmpDisSum = 0;
-        for (int i = int(tmpPath.size() - 1); i > 0; --i) {
-            tmpDisSum += net[tmpPath[i]][tmpPath[i - 1]].length;
-        }
-        if (tmpDisSum <= optBestTimePathShortestDistanceCost) {
-            optBestTimePathShortestDistanceCost = tmpDisSum;
+        if (bestTimePath.empty() || tmpPath.size() < bestTimePath.size()) {
             bestTimePath = tmpPath;
         }
         tmpPath.pop_back();
@@ -147,8 +141,8 @@ void DFS_d(int v) {
         for (int i = int(tmpPath.size() - 1); i > 0; --i) {
             tmpTimSum += net[tmpPath[i]][tmpPath[i - 1]].time;
         }
-        if (tmpTimSum <= optBestDistancePathShortestTimeCost) {
-            optBestDistancePathShortestTimeCost = tmpTimSum;
+        if (tmpTimSum <= optBestTimePathShortestDistanceCost) {
+            optBestTimePathShortestDistanceCost = tmpTimSum;
             bestDistancePath = tmpPath;
         }
         tmpPath.pop_back();
@@ -176,7 +170,6 @@ int pat_solver() {
     dj_time(start);
     DFS_d(destination);
     DFS_t(destination);
-
     bool flag = true;
     if (bestTimePath.size() == bestDistancePath.size()) {
         for (int i = 0; i < bestDistancePath.size(); ++i) {
@@ -186,32 +179,29 @@ int pat_solver() {
                 break;
             }
         }
-    }else{
+    } else {
         flag = false;
     }
-
-
+    int optDis = 0, optTime = 0;
+    for (int i = int(bestDistancePath.size() - 1); i > 0; --i) {
+        optDis += net[bestDistancePath[i]][bestDistancePath[i - 1]].length;
+    }
+    for (int i = int(bestTimePath.size() - 1); i > 0; --i) {
+        optTime += net[bestTimePath[i]][bestTimePath[i - 1]].time;
+    }
     if (flag) {
-        printf("Distance = %d; Time = %d:", optBestTimePathShortestDistanceCost, optBestDistancePathShortestTimeCost);
+        printf("Distance = %d; Time = %d:", optDis, optTime);
         for (int i = int(bestTimePath.size() - 1); i >= 0; --i) {
             printf(" %d", bestTimePath[i]);
             if (i > 0) printf(" ->");
         }
     } else {
-        int optDis = 0, optTime = 0;
-        for (int i = int(bestDistancePath.size() - 1); i > 0; --i) {
-            optDis += net[bestDistancePath[i]][bestDistancePath[i - 1]].length;
-        }
         printf("Distance = %d:", optDis);
         for (int i = int(bestDistancePath.size() - 1); i >= 0; --i) {
             printf(" %d", bestDistancePath[i]);
             if (i > 0) printf(" ->");
         }
         printf("\n");
-
-        for (int i = int(bestTimePath.size() - 1); i > 0; --i) {
-            optTime += net[bestTimePath[i]][bestTimePath[i - 1]].time;
-        }
         printf("Time = %d:", optTime);
         for (int i = int(bestTimePath.size() - 1); i >= 0; --i) {
             printf(" %d", bestTimePath[i]);

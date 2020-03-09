@@ -15,7 +15,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/Travel Plan DJ.cpp"
         #        "PAT/Travel Plan DFS_DF.cpp"
         #        "PAT/Public Bike Management.cpp"
-        #        "PAT/gas station.cpp"
+        #                "PAT/gas station.cpp"
         #        "PAT/All Road Lead to Rome D DFSj.cpp"
         #        "PAT/Shuffling Machine.cpp"
         #        "PAT/A1026 Shortest Distance.cpp"
@@ -124,9 +124,14 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1068 Find More Coins .cpp"
         #        "PAT/A1068 Find More Coins.cpp"
         #        "PAT/A1057 Stack.cpp"
-        #        "PAT/A1107 Social Clusters.cpp"
+        #                "PAT/A1107 Social Clusters.cpp"
         AlgNote/UnionFindSetLearning.cpp
         #        "PAT/A1108 Finding Average .cpp"
         #        "PAT/A1109 Group Photo.cpp"
         #        "PAT/A1110 Complete Binary Tree.cpp"
-        "PAT/A1111 Online Map.cpp" "PAT/A1112 Stucked Keyboard.cpp")
+        #        "PAT/A1111 Online Map.cpp"
+        #        "PAT/A1112 Stucked Keyboard.cpp"
+        #        "PAT/A1072 Gas Station.cpp"
+        #        "PAT/A1113 Integer Set Partition.cpp"
+        #        "PAT/A1114 Family Property.cpp"
+        "PAT/A1115 Counting Nodes in a BST.cpp")
