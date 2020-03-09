@@ -21,7 +21,8 @@ using namespace std;
 /// 1 到 N 编号
 
 /*
- * 带有深度的DFS问题
+ * 计算带有特定深度的BFS问题
+ * 这类问题不建议用DFS，因为会重复算。
  */
 struct node {
     int id = 0;

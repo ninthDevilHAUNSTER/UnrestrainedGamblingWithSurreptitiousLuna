@@ -134,4 +134,12 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1072 Gas Station.cpp"
         #        "PAT/A1113 Integer Set Partition.cpp"
         #        "PAT/A1114 Family Property.cpp"
-        "PAT/A1115 Counting Nodes in a BST.cpp")
+        #        "PAT/A1115 Counting Nodes in a BST.cpp"
+        #        "PAT/A1116 Come on! Let's C.cpp"
+        #        "PAT/A1117 Eddington Number.cpp"
+        #        "PAT/A1118 Birds in Forest.cpp"
+        #        "PAT/A1119 Pre- and Post-order Traversals.cpp" # TODO
+        #        "PAT/A1120 Friend Numbers.cpp"
+        #        "PAT/A1121 Damn Single.cpp"
+        #        "PAT/A1122 Hamiltonian Cycle.cpp"
+        "PAT/A1123 Is It a Complete AVL Tree.cpp" "PAT/A1124 Raffle for Weibo Followers.cpp")
