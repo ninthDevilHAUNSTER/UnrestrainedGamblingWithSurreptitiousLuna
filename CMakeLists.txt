@@ -149,4 +149,8 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1127 ZigZagging on a Tree.cpp"
         #        "PAT/A1128 N Queens Puzzle.cpp"
         #        "PAT/A1129 Recommendation System.cpp"
-        "PAT/A1130 Infix Expression.cpp")
+        #        "PAT/A1130 Infix Expression.cpp"
+        #        "PAT/1131 Subway Map.cpp"
+        #        ↑↑  测试点3爆了。不知道咋办
+        #        "PAT/A1132 Cut Integer .cpp"
+        "PAT/A1133 Splitting A Linked List.cpp")
