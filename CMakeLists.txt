@@ -7,7 +7,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         main.cpp
         AlgNote/AlgNoteMainHeader.h
         PAT/PATMainHeader.h
-        #        AlgNote/NullptrLearning.cpp
+        AlgNote/NullptrLearning.cpp
         #        PAT/emergency.cpp
         #        AlgNote/shortest_path_adj.cpp
         #        AlgNote/STL_usage.cpp
@@ -125,7 +125,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1068 Find More Coins.cpp"
         #        "PAT/A1057 Stack.cpp"
         #                "PAT/A1107 Social Clusters.cpp"
-        AlgNote/UnionFindSetLearning.cpp
+        #        AlgNote/UnionFindSetLearning.cpp
         #        "PAT/A1108 Finding Average .cpp"
         #        "PAT/A1109 Group Photo.cpp"
         #        "PAT/A1110 Complete Binary Tree.cpp"
@@ -153,4 +153,10 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/1131 Subway Map.cpp"
         #        ↑↑  测试点3爆了。不知道咋办
         #        "PAT/A1132 Cut Integer .cpp"
-        "PAT/A1133 Splitting A Linked List.cpp")
+        #        "PAT/A1133 Splitting A Linked List.cpp"
+        #        "PAT/A1134 Vertex Cover.cpp"
+        #        AlgNote/RBTreeLearning.cpp
+        #        "PAT/A1135 Is It A Red-Black Tree.cpp"
+        #        "PAT/A1136 A Delayed Palindrome.cpp"
+        #        "PAT/A1137 Final Grading.cpp"
+        "PAT/A1138 Postorder Traversal.cpp" "PAT/A1139 First Contact.cpp")
