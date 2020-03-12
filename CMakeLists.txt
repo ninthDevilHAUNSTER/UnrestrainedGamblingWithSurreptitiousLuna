@@ -159,4 +159,8 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1135 Is It A Red-Black Tree.cpp"
         #        "PAT/A1136 A Delayed Palindrome.cpp"
         #        "PAT/A1137 Final Grading.cpp"
-        "PAT/A1138 Postorder Traversal.cpp" "PAT/A1139 First Contact.cpp")
+        #        "PAT/A1138 Postorder Traversal.cpp"
+        #        "PAT/A1139 First Contact.cpp"
+        #        "PAT/A1140 Look-and-say Sequence.cpp"
+        #        "PAT/A1141 PAT Ranking of Institutions.cpp"
+        "PAT/1142 Maximal Clique.cpp" "PAT/A1143 Lowest Common Ancestor.cpp")
