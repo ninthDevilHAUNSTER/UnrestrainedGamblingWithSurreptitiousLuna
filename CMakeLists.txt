@@ -163,4 +163,11 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1139 First Contact.cpp"
         #        "PAT/A1140 Look-and-say Sequence.cpp"
         #        "PAT/A1141 PAT Ranking of Institutions.cpp"
-        "PAT/1142 Maximal Clique.cpp" "PAT/A1143 Lowest Common Ancestor.cpp")
+        #        "PAT/1142 Maximal Clique.cpp"
+        #        "PAT/A1143 Lowest Common Ancestor.cpp"
+        #        "PAT/A1144 The Missing Number.cpp"
+        #        "PAT/A1145 Hashing - Average Search Time.cpp"
+        #        "PAT/A1146 Topological Order.cpp"
+        #        "PAT/A1147 Heaps.cpp"
+        #        "PAT/A1148 Werewolf - Simple Version.cpp"
+        "PAT/A1149 Dangerous Goods Packaging.cpp")
