@@ -166,8 +166,12 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/1142 Maximal Clique.cpp"
         #        "PAT/A1143 Lowest Common Ancestor.cpp"
         #        "PAT/A1144 The Missing Number.cpp"
-        #        "PAT/A1145 Hashing - Average Search Time.cpp"
+        #                "PAT/A1145 Hashing - Average Search Time.cpp"
         #        "PAT/A1146 Topological Order.cpp"
         #        "PAT/A1147 Heaps.cpp"
         #        "PAT/A1148 Werewolf - Simple Version.cpp"
-        "PAT/A1149 Dangerous Goods Packaging.cpp")
+        #        "PAT/A1149 Dangerous Goods Packaging.cpp"
+        #        "PAT/A1150 Travelling Salesman Problem.cpp"
+        #        "PAT/A1151 LCA in a Binary Tree.cpp"
+        #        "PAT/A1152 Google Recruitment.cpp"
+        "PAT/A1153 Decode Registration Card of PAT.cpp")

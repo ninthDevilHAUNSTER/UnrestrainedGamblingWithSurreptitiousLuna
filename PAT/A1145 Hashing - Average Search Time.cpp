@@ -71,7 +71,7 @@ int pat_solver() {
                 break;
             }
         }
-        if (!canInsertFlag) printf("%d cannot be inserted\n", _i);
+        if (!canInsertFlag) printf("%d cannot be inserted.\n", _i); // 草这里少了个句号。
     }
     int cnt = 0;
     for (int k = 0; k < M; ++k) {
