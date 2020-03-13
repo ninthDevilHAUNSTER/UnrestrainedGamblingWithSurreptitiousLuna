@@ -8,6 +8,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         AlgNote/AlgNoteMainHeader.h
         PAT/PATMainHeader.h
         AlgNote/NullptrLearning.cpp
+        GPLT/GPLTMainHeader.h
         #        PAT/emergency.cpp
         #        AlgNote/shortest_path_adj.cpp
         #        AlgNote/STL_usage.cpp
@@ -130,7 +131,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1109 Group Photo.cpp"
         #        "PAT/A1110 Complete Binary Tree.cpp"
         #        "PAT/A1111 Online Map.cpp"
-        #        "PAT/A1112 Stucked Keyboard.cpp"
+        "PAT/A1112 Stucked Keyboard.cpp"
         #        "PAT/A1072 Gas Station.cpp"
         #        "PAT/A1113 Integer Set Partition.cpp"
         #        "PAT/A1114 Family Property.cpp"
@@ -166,7 +167,7 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/1142 Maximal Clique.cpp"
         #        "PAT/A1143 Lowest Common Ancestor.cpp"
         #        "PAT/A1144 The Missing Number.cpp"
-        #                "PAT/A1145 Hashing - Average Search Time.cpp"
+        #        "PAT/A1145 Hashing - Average Search Time.cpp"
         #        "PAT/A1146 Topological Order.cpp"
         #        "PAT/A1147 Heaps.cpp"
         #        "PAT/A1148 Werewolf - Simple Version.cpp"
@@ -174,4 +175,9 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        "PAT/A1150 Travelling Salesman Problem.cpp"
         #        "PAT/A1151 LCA in a Binary Tree.cpp"
         #        "PAT/A1152 Google Recruitment.cpp"
-        "PAT/A1153 Decode Registration Card of PAT.cpp")
+        #        "PAT/A1153 Decode Registration Card of PAT.cpp"
+        #        "PAT/A1154 Vertex Coloring.cpp"
+        #        "PAT/1155 Heap Paths.cpp"
+        #        "PAT/A1105 Spiral Matrix.cpp"
+        #        "PAT/A1003 Emergency.cpp"
+        )
