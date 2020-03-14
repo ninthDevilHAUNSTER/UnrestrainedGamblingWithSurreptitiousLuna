@@ -37,12 +37,28 @@ struct node {
     node() = default;
 };
 
-node *root = nullptr;
 
 bool isUnique = true;
+vector<int> in;
 
-void PrePost2Tree(int preBegin, int preEnd, int postBegin, int postEnd) {
-
+node *PrePost2Tree(node *root, int preBegin, int preEnd, int postBegin, int postEnd) {
+    if (preBegin > preEnd) {
+        in.push_back(preOrder[preBegin]);
+        return nullptr;
+    } else {
+        if (preOrder[preBegin] == postOrder[postEnd]) {
+            int i = preBegin + 1;
+            while (i <= preEnd && preOrder[i] != postOrder[postEnd - 1]) i++;
+            if (i - preBegin > 1) {
+                root->left = PrePost2Tree(root->left, preBegin + 1, i - 1, postBegin, postEnd + (i - preBegin - 1) - 1);
+            } else {
+                isUnique = false;
+            }
+            in.push_back(postOrder[postBegin]);
+            root->right = PrePost2Tree(root->right, i, preBegin, postBegin + (i - preBegin - 1), postEnd - 1);
+        }
+        return root;
+    }
 }
 
 int N;
@@ -58,6 +74,7 @@ int pat_solver() {
         scanf("%d", &_);
         postOrder.push_back(_);
     }
+    node *root = nullptr;
 
 
     return 0;

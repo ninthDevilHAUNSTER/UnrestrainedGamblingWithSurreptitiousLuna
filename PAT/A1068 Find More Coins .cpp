@@ -48,6 +48,7 @@ int pat_solver() {
     for (int i = 1; i <= N; ++i) {
         for (int v = M; v >= w[i]; --v) {
             if (dp[v] <= dp[v - w[i]] + w[i]) {
+                cout << dp[v - w[i]] + w[i] << endl;
                 dp[v] = dp[v - w[i]] + w[i];
                 choice[i][v] = true;
             }
