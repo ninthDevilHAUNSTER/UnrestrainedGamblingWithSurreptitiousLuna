@@ -22,4 +22,11 @@ add_executable(UnrestrainedGamblingWithSurreptitiousLuna
         #        CCF/201912-4区块链.cpp
         #        CCF/201909-1小明种苹果.cpp
         #        CCF/201909-2小明种苹果（续）.cpp
-        CCF/201909-3字符画.cpp)
+        #        CCF/201909-3字符画.cpp
+        #        CCF/_unordered_set_modify.cpp
+        #        CCF/201312-2ISBN号码.cpp
+        #        CCF/201312-3最大的矩形.cpp
+        #        CCF/201312-4有趣的数字.cpp
+        #        LeetCode/1035.不相交的线.cpp
+        #        LeetCode/5.最长回文子串.cpp
+        LeetCode/无重复字符的最长子串.cpp "LeetCode/1223. 掷骰子模拟.cpp" LeetCode/146.LRU缓存机制.py)

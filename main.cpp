@@ -5,7 +5,7 @@
 #include "CCF/CCFMainHeader.h"
 #include <iostream>
 
-int main() {
-    csp_solver();
+int main(){
+
     return 0;
 }
